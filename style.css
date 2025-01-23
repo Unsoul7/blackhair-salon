@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Staatliches&display=swap');
+
+*{
+    font-family: "Staatliches", serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 20px;
+}
+.navbar .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Staatliches", serif;
+}
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Staatliches", serif;
+}
+.navbar .nav-links a:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    position: relative;
+    height: calc(100vh - 80px);
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(50%);
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.hero-text h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 2.5em;
+    font-weight: 100;
+    margin: 6px 0 0;
+}
+
+.intro-section {
+    background-color: rgba(255, 218, 185, 0.24);
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.intro-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.intro-header hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid black;
+}
+
+.intro-header span {
+    font-size: 25px;
+    font-family: "Nunito";
+    font-weight: lighter;
+}
+
+.intro-title {
+    margin-top: 20px;
+    font-size: 48px;
+    margin-bottom: 0;
+    text-decoration: underline;
+    text-decoration-color: pink;
+    text-decoration-thickness: 10px;
+}
+
+.intro-section p {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    font-size: 23px;
+    width: 50%;
+    text-transform: capitalize;
+    font-family: 'Nunito';
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+.about-us-btn {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.about-us-btn div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: pink;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}    
+
+.about-us-btn:hover div{
+    transform: translateX(0);
+}
